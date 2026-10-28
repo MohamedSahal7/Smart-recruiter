@@ -18,3 +18,13 @@ export const store = configureStore({
 });
 
 export default store;
+import { configureStore } from "@reduxjs/toolkit";
+import assessmentReducer from "./slices/assessmentSlice";
+
+export const store = configureStore({
+  reducer: {
+    assessments: assessmentReducer,
+  },
+});
+
+export default store;
