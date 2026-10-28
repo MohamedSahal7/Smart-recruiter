@@ -1,3 +1,11 @@
+import { configureStore } from "@reduxjs/toolkit";
+import resultsReducer from "./slices/resultSlice";
+
+export const store = configureStore({
+  reducer: {
+    results: resultsReducer,
+  },
+});
 import { configureStore } from '@reduxjs/toolkit';
 import authReducer from './slices/authSlice';
 import assessmentReducer from './slices/assessmentSlice';
